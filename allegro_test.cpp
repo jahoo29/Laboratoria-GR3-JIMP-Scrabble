@@ -71,8 +71,8 @@ clicked=!clicked;
 if(!mouse_b){
 if(hold)hold=false;
 	if(!clicked){
- tile_x = mouse_x;
- tile_y = mouse_y;
+ tile_x = mouse_x-10;
+ tile_y = mouse_y-10;
  
 }
 
