@@ -7,7 +7,8 @@
 		this->value=valu;
 		this->pos_x = x;
 		this->pos_y = y;
-		
+		this->tile = NULL;
+		this->locked=false;
 		
 		};
 	
@@ -20,4 +21,19 @@
 		return rect;
 	};
 	
-
+	void Tile::lock(){
+		this->locked=true;
+	}
+		
+	void Tile::unlock(){
+		this->locked=false;
+	}
+	
+bool mouse_tile_collision(Tile a){
+	if(mouse_x>=a.pos_x&&mouse_x<=a.pos_x+20){
+		if(mouse_y>=a.pos_y&&mouse_y<=a.pos_y+20)return true;
+	}
+ return false;
+	}
+	
+	
