@@ -5,7 +5,7 @@
 #include "tile.cpp"
 #include "stuff.cpp"
 
-
+// Wersja kodu ktora kompiluje mi się do exeka
 
 volatile int Close = false;
 
